@@ -1,29 +1,17 @@
 def search_binary(sorted_array, target):
 
     left = 0
-
     right = len(sorted_array) - 1
-
     while left <= right:
-
         midpoint = left + (right - left) // 2
-
         current = sorted_array[midpoint]
-
         if current == target:
-
             return midpoint
-
         else:
-
             if target < current:
-
                 right = midpoint - 1
-
             else:
-
                 left = midpoint + 1
-
     return None
 
  
