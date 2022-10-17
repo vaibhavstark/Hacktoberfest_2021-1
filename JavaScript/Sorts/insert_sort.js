@@ -1,3 +1,4 @@
+//This is insertion sort
 function insertionSort(inputArr) {
   let n = inputArr.length;
       for (let i = 1; i < n; i++) {
